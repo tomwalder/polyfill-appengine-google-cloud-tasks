@@ -1,0 +1,37 @@
+{
+  "name": "tomwalder/polyfill-appengine-google-cloud-tasks",
+  "type": "library",
+  "description": "Allow simple usages of the old Google App Engine native PushTask and PushQueue to work on Cloud Run, other environments using the Google Cloud Tasks API",
+  "keywords": [
+    "google",
+    "cloud tasks",
+    "appengine",
+    "gae",
+    "task",
+    "queue",
+    "google cloud",
+    "cloud run"
+  ],
+  "homepage": "https://github.com/tomwalder/php-gds",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Tom Walder",
+      "email": "twalder@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0",
+    "ext-bcmath": "*",
+    "google/cloud-tasks": "^v1.8"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "suggest": {
+    "ext-grpc": "Enables use of gRPC, a universal high-performance RPC framework created by Google.",
+    "ext-protobuf": "Provides a significant increase in throughput over the pure PHP protobuf implementation. See https://cloud.google.com/php/grpc for installation instructions."
+  }
+}
